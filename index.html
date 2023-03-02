@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Count Down</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Countdown Timer</h1>
+		</header>
+        <main class="container">
+			<div id="displayTime">
+				<span id="hrs">00</span>
+				<span>:</span>
+				<span id="min">00</span>
+				<span>:</span>
+				<span id="sec">00</span>
+				<span>:</span>
+				<span id="milli">00</span>
+			</div>
+			<div id="buttons"> 
+				<button type="button" id="pause">Pause</button>
+				<button type="button" id="reset">Reset</button>
+			</div>
+			<form>
+				<h4>Input for Countdown</h4>
+				<section>
+					<div>
+						<label for="hrsinp">Hours</label>
+						<input type="number" placeholder="0" min="0" id="hrsinp">
+					</div>
+					<div>
+						<label for="mininp">Minutes</label>
+						<input type="number" placeholder="0" min="0" max="59" id="mininp">
+					</div>
+					<div>
+						<label for="secinp">Seconds</label>
+						<input type="number" placeholder="0" min="0" max="59" id="secinp">
+					</div>
+				</section>
+				<button type="button" id="start">Start</button>
+			</form>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
